@@ -1,6 +1,7 @@
-package commom
+package slice
 
-func PartationSlice[T any](s []T, step int) [][]T {
+func PartitionSlice[T any](s []T, step int) [][]T {
+
 	res := make([][]T, 0)
 	if len(s) < step {
 		res = append(res, s)
